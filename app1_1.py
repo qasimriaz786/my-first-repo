@@ -13,8 +13,7 @@ def statement(invoice, plays):
     result = f"Statement for {invoice['customer']}\n"
 
     for perf in invoice['performances']:
-        play = plays[perf['playID']]
-        this_amount = 0
+        
 
         # Calculate amount
         if play['type'] == "tragedy":
