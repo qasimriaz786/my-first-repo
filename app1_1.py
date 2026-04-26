@@ -216,13 +216,7 @@ class MyWindow(QWidget):
             "performances": self.performances
         }
 
-        result = statement(invoice, plays)
-        self.invoice_area.setText(result)
-
-        # ✅ Reset after generating invoice
-        self.performances = []
-        self.calc_area.clear()
-
+        result = statement(invoice, plays)\
 
 # -------------------------
 # RUN APP
